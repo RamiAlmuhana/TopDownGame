@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     
     private Rigidbody2D _rigidbody2D;
     private Vector2 _movementInput;
+    private Vector2 _smoothedMovementInput;
+    private Vector2 _movementInputSmoothVelocity;
 
     private void Awake()
     {
@@ -16,7 +18,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidbody2D.linearVelocity = _movementInput * _speed;
+        _smoothedMovementInput = Vector2.SmoothDamp(
+            _smoothedMovementInput,
+            _movementInput,
+            ref _movementInputSmoothVelocity,
+            0.1f);
+        _rigidbody2D.linearVelocity = _smoothedMovementInput * _speed;
     }
 
     private void OnMove(InputValue inputValue)
