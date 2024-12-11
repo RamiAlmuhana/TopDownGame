@@ -24,6 +24,8 @@ public class HealthController : MonoBehaviour
     public UnityEvent OnDied;
 
     public UnityEvent OnDamaged;
+    
+    public UnityEvent OnHealthChanged;
 
     public void TakeDamage(float damageAmount)
     {
@@ -38,6 +40,8 @@ public class HealthController : MonoBehaviour
         }
 
         _currentHealth -= damageAmount;
+        
+        OnHealthChanged.Invoke();
 
         if (_currentHealth < 0)
         {
@@ -62,6 +66,8 @@ public class HealthController : MonoBehaviour
         }
 
         _currentHealth += amountToAdd;
+        
+        OnHealthChanged.Invoke();
 
         if (_currentHealth > _maximumHealth)
         {
