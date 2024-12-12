@@ -22,6 +22,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
+        } else if (collision.GetComponent<EnemyShooting>())
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 
