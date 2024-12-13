@@ -4,7 +4,10 @@ using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
     private static int _enemyCount = 0;
-    [SerializeField] private string _nextLevelName;
+    [SerializeField]
+    private string _nextLevelName;
+    [SerializeField]
+    private GameObject bombPrefab;
 
     private void Awake()
     {
@@ -13,11 +16,22 @@ public class EnemyController : MonoBehaviour
 
     private void OnDestroy()
     {
+        
+        DropBomb();
+        
         _enemyCount--;
         
         if (_enemyCount <= 0)
         {
             LoadNextLevel();
+        }
+    }
+    
+    private void DropBomb()
+    {
+        if (bombPrefab != null)
+        {
+            Instantiate(bombPrefab, transform.position, Quaternion.identity);
         }
     }
 
