@@ -408,6 +408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyWithGun (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6839765438406115490, guid: fe3b3babddc43f5449a0cd6e2afeeab7, type: 3}
+      propertyPath: _nextLevelName
+      value: Main Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1701,6 +1705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyWithGun (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6839765438406115490, guid: fe3b3babddc43f5449a0cd6e2afeeab7, type: 3}
+      propertyPath: _nextLevelName
+      value: Main Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1762,6 +1770,10 @@ PrefabInstance:
     - target: {fileID: 3161009282153022594, guid: fe3b3babddc43f5449a0cd6e2afeeab7, type: 3}
       propertyPath: m_Name
       value: EnemyWithGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839765438406115490, guid: fe3b3babddc43f5449a0cd6e2afeeab7, type: 3}
+      propertyPath: _nextLevelName
+      value: Main Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1907,6 +1919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyWithGun (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6839765438406115490, guid: fe3b3babddc43f5449a0cd6e2afeeab7, type: 3}
+      propertyPath: _nextLevelName
+      value: Main Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1995,12 +2011,12 @@ SpriteRenderer:
   m_SortingLayerID: -1241818635
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4533554359200444325, guid: 2c236adda7a79db48be2050507ab39e4, type: 3}
+  m_Sprite: {fileID: 5466062389446879634, guid: 9c06c72ee87be5040a5efbf6721dd186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 21.6, y: 32.407913}
+  m_Size: {x: 13.33, y: 20}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2015,8 +2031,8 @@ Transform:
   m_GameObject: {fileID: 1603656522}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -1.79, z: 0}
+  m_LocalScale: {x: 2.8, y: 2.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
